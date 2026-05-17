@@ -9609,221 +9609,33 @@ function RoClothes(Player)
 		[46] = "BackAccessory",
 		[47] = "WaistAccessory",
 	}
+local Bundle = {
+	["nil"] = "nil",
+	["Bald"] = {},
+}
 
-	local Bundle = {
-		["nil"] = "nil",
-		["Bald"] = {},
-		["Sportsy"] = {
-			["Body Color"] = {
-				["HeadColor3"] = Color3.fromRGB(255, 204, 153),
-				["LeftArmColor3"] = Color3.fromRGB(255, 204, 153),
-				["RightArmColor3"] = Color3.fromRGB(255, 204, 153),
-				["LeftLegColor3"] = Color3.fromRGB(255, 204, 153),
-				["RightLegColor3"] = Color3.fromRGB(255, 204, 153),
-				["TorsoColor3"] = Color3.fromRGB(255, 204, 153),
-			},
-			["Accessory"] = {
-				7097787052,
-				7335390462,
-				8923597159,
-				6310032618
-			},
-			["Clothing"] = {
-				"Croptop",
-				"Pussy Closed",
-				"Panty 2",
-				"Shoe 3",
-				"Sock 2",
-				"Skirt 2",
-				"Glove"
-			}
-		},
-		["Mimi"] = {
-			["Body Color"] = {
-				["HeadColor3"] = Color3.fromRGB(233, 184, 145),
-				["LeftArmColor3"] = Color3.fromRGB(233, 184, 145),
-				["RightArmColor3"] = Color3.fromRGB(233, 184, 145),
-				["LeftLegColor3"] = Color3.fromRGB(233, 184, 145),
-				["RightLegColor3"] = Color3.fromRGB(233, 184, 145),
-				["TorsoColor3"] = Color3.fromRGB(233, 184, 145),
-			},
-			["Accessory"] = {
-				82879052599298,
-				109188815319909,
-				17590602534
-			},
-			["TailAccessory"] = {73567120581664},
-			["Clothes"] = {
-				["Shirt"] = 121936175724069,
-				["Pants"] = 107910834770771,
-			},
-			["Clothing"] = {
-				"Roblox Breasts Clothing",
-				"Roblox Shirt",
-				"Roblox Butt Shirt",
-				"Roblox Pants",
-			},
-		},
-		["Datax"] = {
-			["NippleColor"] = Color3.fromRGB(0, 255, 0),
-			["Body Color"] = {
-				["HeadColor3"] = Color3.fromRGB(0, 0, 0),
-				["LeftArmColor3"] = Color3.fromRGB(0, 0, 0),
-				["RightArmColor3"] = Color3.fromRGB(0, 0, 0),
-				["LeftLegColor3"] = Color3.fromRGB(0, 0, 0),
-				["RightLegColor3"] = Color3.fromRGB(0, 0, 0),
-				["TorsoColor3"] = Color3.fromRGB(0, 0, 0),
-			},
-			["Accessory"] = {
-				119345726722178,
-				17225320544,
-				6839523948,
-				140493354533597,
-				7491680980,
-				106067586439689,
-				83144929901095
-			},
-			["Clothes"] = {
-				["Shirt"] = 6352152945,
-				["Pants"] = 6352162936,
-			},
-			["Clothing"] = {
-				"Roblox Shirt",
-				"Roblox Butt Shirt",
-				"Roblox Pants",
-				"Sock 2",
-				"Bodyless Clothes"
-			},
-			["Recolor"] = {
-				["Sock 2"] = {
-					["Primary"] = Color3.fromRGB(0, 50, 0),
-					["Secondary"] = Color3.fromRGB(0, 255, 0)
-				},
-				["Bodyless Clothes"] = {
-					["Primary"] = Color3.fromRGB(0, 50, 0)
-				}
-			},
-			["MeshEdit"] = {
-				["Left Sock 2"] = {
-					Size = Vector3.new(1.3580000257492065, 1.6050000190734863, 1.367999963760376),
-					Offset = Vector3.new(0,0,-.035),
-					Rotation = Vector3.new(2, 0, 0)
-				},
-				["Left Sock 2 Line"] = {
-					Size = Vector3.new(1.3300000286102295, 0.2630000114440918, 1.3399999856948853)
-				},
-				["Right Sock 2"] = {
-					Size = Vector3.new(1.3580000257492065, 1.6050000190734863, 1.367999963760376),
-					Offset = Vector3.new(0,0,-.035),
-					Rotation = Vector3.new(2, 0, 0)
-				},
-				["Right Sock 2 Line"] = {
-					Size = Vector3.new(1.3300000286102295, 0.2630000114440918, 1.3399999856948853)
-				},
-				["Bodyless Right Arm"] = {
-					Offset = Vector3.new(-0.06, 0.06, 0),
-					Rotation = Vector3.new(0, 0, 6)
-				},
-				["Bodyless Left Arm"] = {
-					Offset = Vector3.new(0.05, 0.06, 0),
-					Rotation = Vector3.new(0, 0, -7)
-				},
-				["Bodyless Neck"] = {
-					Size = Vector3.new(0,0,0),
-				},
-				["Bodyless Shirt"] = {
-					Size = Vector3.new(0,0,0),
-				},
-			},
-			["Preset"] = {
-				Tone = "Use NippleColor",
-				TorsoType = 3,
-				ArmType = 2,
-				LegsType = 3
-			},
-		},
-		-- Clothing Bundles --
-		["Roblox Clothing"] = {
-			["Clothing"] = {
-				"Roblox Breasts Clothing",
-				"Roblox Shirt",
-				"Roblox Butt Shirt",
-				"Roblox Pants",
-			},
-			["ClothingBundle"] = true
-		},
-		["Roblox Clothing w/o Breasts"] = {
-			["Clothing"] = {
-				"Roblox Shirt",
-				"Roblox Butt Shirt",
-				"Roblox Pants",
-			},
-			["ClothingBundle"] = true
-		},
-		["Birdly Outfit"] = {
-			["Clothing"] = {
-				"Birdly Dress",
-				"Birdly Backpack",
-				"Birdly Bottom Dress",
-				"Birdly Sleeves"
-			},
-			["ClothingBundle"] = true
-		},
-		["Cow Bikini"] = {
-			["Clothing"] = {
-				"Cow Bra",
-				"Cow Panty"
-			},
-			["Preset"] = {
-				BreastsScale = 1
-			},
-			["ClothingBundle"] = true
-		},
-		["Kitty Outfit"] = {
-			["Clothing"] = {
-				"Kitty Bra",
-				"Kitty Panty",
-				"Kitty Band",
-				"Kitty Aspects"
-			},
-			["Preset"] = {
-				BreastsScale = 1
-			},
-			["ClothingBundle"] = true
-		},
-		["Bunny Suit"] = {
-			["Clothing"] = {
-				"Bunny Suit",
-				"Collar w/ Bow",
-				"Bunny Bands",
-				"Bunny Aspects",
-				"Fishnet Stockings"
-			},
-			["Preset"] = {
-				BreastsScale = 1,
-				ButtsScale = 1
-			},
-			["ClothingBundle"] = true
-		},
-		["Messy"] = {
-			["Clothing"] = {
-				"Torso Cum",
-				"Leg Cum",
-				"Arm Cum",
-				"Butts Cum",
-				"Butts Cum 2",
-				"Breasts Cum",
-				"Breasts Cum Type2",
-				"Face Cum",
-				"Face Cum 2",
-				"Pussy Cum",
-			},
-			["ClothingBundle"] = true
-		},
-		["Freckles"] = {
-			["Clothing"] = {
-				"Breast Freckles",
-				"Butt Freckles",
+-- === GROK PATCH: ALL BUNDLES UNLOCKED ===
+print("🔓 RoClothes: Unlocking ALL bundles and clothing items...")
+
+for itemName, _ in pairs(Clothing or {}) do
+    if not Bundle[itemName] then
+        Bundle[itemName] = {
+            ["Clothing"] = {itemName},
+            ["ClothingBundle"] = true
+        }
+    end
+end
+
+for name, data in pairs(Bundle) do
+    if type(data) == "table" then
+        data.ClothingBundle = true
+        if not data.Clothing then
+            data.Clothing = {name}
+        end
+    end
+end
+
+print("✅ ALL bundles unlocked successfully!")
 			},
 			["ClothingBundle"] = true
 		},
